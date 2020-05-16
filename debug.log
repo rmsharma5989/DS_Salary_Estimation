@@ -1,0 +1,8 @@
+[0514/123559.437:ERROR:process_info.cc(359)] UncheckedAllocate
+[0514/123559.438:ERROR:process_info.cc(359)] UncheckedAllocate
+[0514/150852.742:ERROR:process_info.cc(359)] UncheckedAllocate
+[0514/150853.610:ERROR:process_info.cc(359)] UncheckedAllocate
+[0514/150920.408:ERROR:file_io.cc(134)] WriteFile: The pipe is being closed. (0xE8)
+[0514/154152.461:ERROR:process_info.cc(359)] UncheckedAllocate
+[0516/161654.935:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0516/174838.832:ERROR:process_info.cc(359)] UncheckedAllocate
