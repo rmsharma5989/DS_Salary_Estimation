@@ -5,6 +5,15 @@ Created on Sat May 16 20:51:32 2020
 @author: Rohit
 """
 
+#-- create new folder from git bash
+#$ cd Documents
+#$ mkdir ds_salary_proj
+#$ cd ds_salary_proj
+#$ git init
+
+#then create a new reposatory in your account from browser, now after doing all the work link your folder with this repo as below.
+#(make sure the project folder name and repo name is same)
+
 import glassdoor_scrapper as gs
 #import pandas as pd
 
@@ -17,14 +26,7 @@ df = gs.get_jobs("Data-Scientist",850,False,path,location,sleep_time)
 df.to_csv("glassdoor_jobs.csv")
 
 
-#-- create new folder from git bash
-#$ cd Documents
-#$ mkdir ds_salary_proj
-#$ cd ds_salary_proj
-#$ git init
 
-#then create a new reposatory in your account from browser, now after doing all the work link your folder with this repo as below.
-#(make sure the project folder name and repo name is same)
 
 #$ cd ds_salary_proj
 #echo "# ds_salary_proj" >> README.md

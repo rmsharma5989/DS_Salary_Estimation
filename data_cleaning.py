@@ -4,6 +4,12 @@ Created on Sat May 16 20:51:32 2020
 
 @author: Rohit
 """
+
+    # github pull, push and create new branch
+    # git pull
+    # git push
+    # git checkout -b data_cleanup
+
 import pandas as pd
 
 df = pd.read_csv("glassdoor_jobs.csv")
@@ -127,5 +133,38 @@ df.datascience_JD.value_counts()
 
 
 df.to_csv('glassdoor_jobs_cleared_data.csv', index = False)
+
+    # git hub push the changes in new branch and merge with master branch by creating new pull request
+    # git add . ( make sure you are in newly created branch)
+    # git commit -m 'data cleaning task done'
+    # git push ( will ask to set  this as upstream)
+    # git push --set-upstream origin data_cleanup
+    # now create new pull request from browser and merge the changes with master branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
