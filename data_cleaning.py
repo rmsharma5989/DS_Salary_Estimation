@@ -43,7 +43,7 @@ df.loc[df['Industry'].str.contains('-1 Exception'), 'Industry'] = '-1'
 df.loc[df['Sector'].str.contains('-1 Exception'), 'Sector'] = '-1'
 df.loc[df['Revenue'].str.contains('-1 Exception'), 'Revenue'] = '-1'
 df.loc[df['Competitors'].str.contains('-1 Exception'), 'Competitors'] = '-1'
-
+df.loc[df['Size'].str.contains('-1 Exception'), 'Size'] = 'Unknown'
 
 # 5. Salary parsing
 df["Salary_type"] = df['Salary Estimate'].apply(lambda x : 'Glassdoor' 
