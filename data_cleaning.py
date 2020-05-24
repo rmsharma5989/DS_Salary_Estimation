@@ -131,6 +131,13 @@ df.machinelearning_JD.value_counts()
 df['datascience_JD'] = df['Job Description'].apply(lambda x: 1 if 'data science' in x.lower() else 0)
 df.datascience_JD.value_counts()
 
+# Job descrition contains "\r\n" remove them
+df["Job Description"] = df["Job Description"].apply(lambda x : x.replace("\r\n", ""))
+
+# clear revenue column "â‚¹100 to â‚¹500 billion (INR)"
+
+df["Revenue"] = df["Revenue"].apply(lambda x : x.replace("â‚","").replace(" (INR)",""))
+
 
 df.to_csv('glassdoor_jobs_cleared_data.csv', index = False)
 
@@ -140,9 +147,6 @@ df.to_csv('glassdoor_jobs_cleared_data.csv', index = False)
     # git push ( will ask to set  this as upstream)
     # git push --set-upstream origin data_cleanup
     # now create new pull request from browser and merge the changes with master branch
-
-
-
 
 
 

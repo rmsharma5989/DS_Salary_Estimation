@@ -21,9 +21,9 @@ path ="E:/OneDrive/DS Journey/DS_Projects/ds_salary_proj/chromedriver"
 sleep_time = 5
 location = 'us'
 
-df = gs.get_jobs("Data-Scientist",850,False,path,location,sleep_time)
+df = gs.get_jobs("Data-Scientist",1000,False,path,location,sleep_time)
 
-df.to_csv("glassdoor_jobs.csv")
+df.to_csv("glassdoor_jobs2.csv")
 
 
 
