@@ -2,7 +2,7 @@
 """
 Created on Sat May 16 20:51:32 2020
 
-@author: Rohit
+@author: Rohit Sharma
 """
 
     # github pull, push and create new branch
