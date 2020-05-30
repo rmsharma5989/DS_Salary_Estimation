@@ -68,7 +68,7 @@ I looked at the distributions of the data, coorelation and the value counts for 
 
 ![EDA_Salary_by_Simp](https://raw.githubusercontent.com/rmsharma5989/ds_salary_proj/master/EDA_Salary_by_Simp.png?token=AD2PVLMKHRS66QG4MPMIBEC62JY6E)
 ![EDA_State](https://raw.githubusercontent.com/rmsharma5989/ds_salary_proj/master/EDA_State.png?token=AD2PVLLIFU6EY2OOGKADUUS62JZC6)
-![EDA_Revenue](https://raw.githubusercontent.com/rmsharma5989/ds_salary_proj/master/EDA_Revenue.png?token=AD2PVLPWQX5YBNATW26SZVS62JZFU)
+![EDA_Revenue](https://github.com/rmsharma5989/ds_salary_proj/blob/master/EDA_Revenue.png)
 Word cloud for salary description column  
 ![EDA_wordcloud](https://raw.githubusercontent.com/rmsharma5989/ds_salary_proj/master/EDA_wordcloud.png?token=AD2PVLPZDLOC6GEDEITZBLS62JZJQ)  
 
