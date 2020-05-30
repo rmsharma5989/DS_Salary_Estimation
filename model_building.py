@@ -160,8 +160,15 @@ gs.fit(X_train,y_train)  #11.48.31 - 12.00.56 : took 13 minutes 25 seconds
 gs.best_score_ # -6.329449340379722
 gs.best_estimator_ # n_estimators=30, min_samples_leaf=1,ccp_alpha=0.0, criterion='mse'
 
-
-
+'''
+RandomForestRegressor(bootstrap=True, ccp_alpha=0.0, criterion='mse',
+                      max_depth=None, max_features='sqrt', max_leaf_nodes=None,
+                      max_samples=None, min_impurity_decrease=0.0,
+                      min_impurity_split=None, min_samples_leaf=1,
+                      min_samples_split=2, min_weight_fraction_leaf=0.0,
+                      n_estimators=30, n_jobs=None, oob_score=False,
+                      random_state=None, verbose=0, warm_start=False)
+'''
 
 
 
@@ -193,6 +200,53 @@ mean_absolute_error(y_test, predict_rf) # 4.711064678004536
 
 mean_absolute_error(y_test,(predict_lm+predict_rf)/2) # 6.60354896258138
 
+
+
+##*********************************************************************************##
+##****** Productionize a Machine Learning model with Flask and Heroku *************##
+##https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2##
+##*********************************************************************************##
+
+# lets first pickle the model : Pickling converts the object into a byte stream which can
+# be stored, transferred, and converted back to the original model at a later time. 
+# Pickles are one of the ways python lets you save just about any object out of the box.
+
+import pickle
+
+pkl = {'model': gs.best_estimator_}
+pickle.dump(pkl,open('model_file' + ".p", "wb"))
+
+
+file_name ='model_file.p'
+with open(file_name, 'rb') as pickled:
+    data = pickle.load(pickled)
+    model = data['model']
+
+model.predict(X_test.iloc[1,:].values.reshape(1,-1))
+
+# list(X_test.iloc[1,:]) #this was to take the first row input from our test set
+
+################################################################
+# Now we are gonna build a simple fask api, for that we need separate environment
+# in comda prompt go to project folder
+# >mkdir FlaskAPI
+# >cd FlaskAPI
+# >conda create -n flask_env python=3.7
+# >conda activate flask_env
+# >conda install flask
+# >conda install pandas
+# >conda install scikit-learn
+# >pip freeze requirement.txt
+# Inside the last directory we created, create a few files and another directory with the command line.
+# >touch app.py ( type nul > app.py)
+# >touch procfile ( type nul > procfile)
+# >touch wsgi.py ( type nul > wsgi.py)
+# >mkdit models
+
+
+
+
+################################################################
 
 
 
