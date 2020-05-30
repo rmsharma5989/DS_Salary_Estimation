@@ -66,11 +66,11 @@ After scraping the data, I needed to clean it up so that it was usable for our m
 
 I looked at the distributions of the data, coorelation and the value counts for the various categorical and numeric variables. Below are a few highlights.
 
-![EDA_Salary_by_Simp](https://raw.githubusercontent.com/rmsharma5989/ds_salary_proj/master/EDA_Salary_by_Simp.png?token=AD2PVLMKHRS66QG4MPMIBEC62JY6E)
-![EDA_State](https://raw.githubusercontent.com/rmsharma5989/ds_salary_proj/master/EDA_State.png?token=AD2PVLLIFU6EY2OOGKADUUS62JZC6)
+![EDA_Salary_by_Simp](https://github.com/rmsharma5989/ds_salary_proj/blob/master/EDA_Salary_by_Simp.png)
+![EDA_State](https://github.com/rmsharma5989/ds_salary_proj/blob/master/EDA_State.png)
 ![EDA_Revenue](https://github.com/rmsharma5989/ds_salary_proj/blob/master/EDA_Revenue.png)
 Word cloud for salary description column  
-![EDA_wordcloud](https://raw.githubusercontent.com/rmsharma5989/ds_salary_proj/master/EDA_wordcloud.png?token=AD2PVLPZDLOC6GEDEITZBLS62JZJQ)  
+![EDA_wordcloud](https://github.com/rmsharma5989/ds_salary_proj/blob/master/EDA_wordcloud.png)  
 
 
 
