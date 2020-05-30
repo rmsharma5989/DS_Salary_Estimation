@@ -1,3 +1,5 @@
+# Data Science Salary Estimator: Project Overview  
+
 - Created a tool that estimates data science salaries (MAE ~ $ 6K) to help data scientists to negotiate their income when they get a job.  
 - Scraped over 500 job descriptions from glassdoor using python and selenium  
 - Cleaned up the data and Data Engineer using pandas data frame 
@@ -5,6 +7,8 @@
 - Did Exploratery data analysis with the help of differnet visualization libraries.  
 - Optimized Linear, Lasso, Ridge and Random Forest Regressors using GridsearchCV to reach the best model.  
 - Built a client facing API using flask.  
+
+## Code and Resources Used  
 
 **Python Version**: 3.7  
 **Packages**: seaborn, pandas, numpy, matplotlib, seaborn, scikit-learn, pickle, flask, json  
